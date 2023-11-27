@@ -31,7 +31,7 @@ public class Button : MonoBehaviour
         if(other.CompareTag("Player") && _canBePressed)
         {
             _canBePressed = false;
-            OnButtonPress();
+            animate.SetBool("PressButton", true);
         }
     }
 
@@ -40,12 +40,12 @@ public class Button : MonoBehaviour
         if(other.CompareTag("Player") && !_canBePressed)
         {
             _canBePressed = true;
+            animate.SetBool("PressButton", false);
         }
     }
 
     private void OnButtonPress()
     {
-        animate.SetTrigger("PressButton");
     }
 
 }
