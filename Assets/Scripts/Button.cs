@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class Button : MonoBehaviour
@@ -12,7 +13,9 @@ public class Button : MonoBehaviour
     
     public AudioSource confirmAudio;
     public Animator animate;
-
+    public ChangeItem[] items;
+        
+        
     private bool _canBePressed;
     private Vector3 _originalPos;
     
@@ -22,9 +25,6 @@ public class Button : MonoBehaviour
         tooltip.text = "Select an app.";
     }
 
-    void Start()
-    {
-    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("button collided with" + other.gameObject.name);
@@ -32,6 +32,11 @@ public class Button : MonoBehaviour
         {
             _canBePressed = false;
             animate.SetBool("PressButton", true);
+
+            foreach (ChangeItem item in items)
+            {
+                item.BoxInstantiate();
+            }
         }
     }
 
@@ -43,9 +48,6 @@ public class Button : MonoBehaviour
             animate.SetBool("PressButton", false);
         }
     }
-
-    private void OnButtonPress()
-    {
-    }
+    
 
 }
