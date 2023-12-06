@@ -3210,7 +3210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 2186749738850872168, guid: be398afba7929944e98c714d0ead691c,
+    type: 3}
 --- !u!65 &1646840328
 BoxCollider:
   m_ObjectHideFlags: 0
