@@ -9,7 +9,7 @@ using UnityEngine.Serialization;
 public class Button : MonoBehaviour
 {
     
-    [FormerlySerializedAs("setSailText")] public TMP_Text tooltip;
+    public TMP_Text tooltip;
     
     public AudioSource confirmAudio;
     public Animator animate;
@@ -27,12 +27,13 @@ public class Button : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(_canBePressed);
         Debug.Log("button collided with" + other.gameObject.name);
-        if(other.CompareTag("Player") && _canBePressed)
+        if(other.CompareTag("Hand") && _canBePressed)
         {
             _canBePressed = false;
             animate.SetBool("PressButton", true);
-
+            confirmAudio.Play();
             foreach (ChangeItem item in items)
             {
                 item.BoxInstantiate();
@@ -42,12 +43,10 @@ public class Button : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player") && !_canBePressed)
+        if(other.CompareTag("Hand") && !_canBePressed)
         {
             _canBePressed = true;
             animate.SetBool("PressButton", false);
         }
     }
-    
-
 }
