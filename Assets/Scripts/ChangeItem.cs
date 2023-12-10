@@ -7,8 +7,6 @@ public class ChangeItem : MonoBehaviour
 { 
     public bool isTouching;
     public GameObject desiredPrefab;
-    
-    public Transform objectspawnpoint;
 
 
     private void Update()
@@ -41,7 +39,7 @@ public class ChangeItem : MonoBehaviour
         if (isTouching && desiredPrefab !=null)
         {
             Debug.Log("Instantiated " + desiredPrefab.name);
-            Instantiate(desiredPrefab, objectspawnpoint);
+            Instantiate(desiredPrefab);
         }
     }
 
