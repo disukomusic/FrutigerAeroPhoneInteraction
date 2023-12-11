@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainScene-Broken.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainScene-Working.unity
     guid: 10091172c016524488cf3161fab980c1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene-testing.unity
     guid: 4a799afc969134b42adb4cbf2ee10578
   m_configObjects:

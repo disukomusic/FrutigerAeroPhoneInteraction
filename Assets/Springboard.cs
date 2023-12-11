@@ -12,7 +12,7 @@ public class Springboard : MonoBehaviour
         if (other.CompareTag("Object"))
         {
             SpringboardAnimator.SetBool("Bounce", true);
-            Vector3 force = new Vector3(-2f, 15f, 4f);
+            Vector3 force = new Vector3(-2f, 15f, 5f);
             Rigidbody rigidBody = other.GetComponent<Rigidbody>();
             if (rigidBody != null)
             {
