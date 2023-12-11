@@ -688,6 +688,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258b067964a90024fb9664afb953c263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  approachedTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  awayFromTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &977463199
 GameObject:
   m_ObjectHideFlags: 0
