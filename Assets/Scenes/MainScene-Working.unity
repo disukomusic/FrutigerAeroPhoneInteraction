@@ -223,7 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 2144312843121222349, guid: 6356066406b08124cb1dd202a5759ccd,
+    type: 3}
   objectspawnpoint: {fileID: 1154850396}
   audioSource: {fileID: 0}
   icon: {fileID: 1299572473}
@@ -1526,7 +1527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 8929725959851289459, guid: ec27030e89e5ab24c9675c33a0a03c4f,
+    type: 3}
   objectspawnpoint: {fileID: 1154850396}
   audioSource: {fileID: 0}
   icon: {fileID: 687423542}
@@ -3028,7 +3030,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.567, y: 1.567, z: -1.0750005}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 435207221}
@@ -3367,7 +3369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 4493097081633767080, guid: 494d72550cfa4374dbd5d0b4b4055a31,
+    type: 3}
   objectspawnpoint: {fileID: 1154850396}
   audioSource: {fileID: 0}
   icon: {fileID: 697177834}
@@ -5184,7 +5187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 4493097081633767080, guid: 494d72550cfa4374dbd5d0b4b4055a31,
+    type: 3}
   objectspawnpoint: {fileID: 1154850396}
   audioSource: {fileID: 0}
   icon: {fileID: 2004128535}
@@ -5405,7 +5409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouching: 0
-  desiredPrefab: {fileID: 0}
+  desiredPrefab: {fileID: 6750765183389589517, guid: 348fef2153dcf824db3b9b02c54b953e,
+    type: 3}
   objectspawnpoint: {fileID: 1154850396}
   audioSource: {fileID: 0}
   icon: {fileID: 1136794953}
